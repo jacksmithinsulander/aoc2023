@@ -1,14 +1,17 @@
 fn game_parse(input: &str) -> Result<i32, std::num::ParseIntError> {
+    // Setting max values
     let red_max: i32 = 12;
     let green_max: i32 = 13;
     let blue_max: i32 = 14;
 
-    let mut is_possible: bool = true; // Initialize as true
+    let mut is_possible: bool = true;
 
+    // Splitting up string input by certain characters
     let split_input: Vec<&str> = input.split(|c| c == ':' || c == ';' || c == ',').collect();
 
     let mut tmp_id: i32 = 0;
 
+    // Operation to se if the requirements are met
     for item in split_input {
         let parts: Vec<&str> = item.split_whitespace().collect();
         if parts[0] == "Game" {
