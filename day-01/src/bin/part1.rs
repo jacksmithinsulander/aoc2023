@@ -1,4 +1,4 @@
-fn num_parse(input: &str) -> Result<i32, std::num::ParseIntError>  {
+fn num_parse(input: &str) -> Result<i32, std::num::ParseIntError> {
        
     // Empty arr to fill with number values
     let mut numeric_chars: Vec<char> = Vec::new();

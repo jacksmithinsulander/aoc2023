@@ -93,4 +93,4 @@ package.json
 ## Rustdoc GUI tests
 tests/rustdoc-gui/src/**.lock
 
-# Before adding new lines, see the comment at the top.
+# Before adding new lines, see the comment at the topn.
